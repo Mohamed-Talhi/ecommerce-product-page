@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-200 font-sans text-gray-800">
+    <header class="flex justify-between items-centre bg-gray-900 text-white p-4">
+        <div class="font-bold text-xl tracking-wide">Timeless Watches</div>
+        <div flex items-centre>
+            <input type="text" placeholder="Search..." class="px-3 py-1.5 text-black rounded-l-md outline-none text-sm w-64 bg-white ">
+            <button class="px-3 py-1.5 rounded-r-md  transition cursor-pointer">
+                <span class="grayscale opacity-70 text-base">🔍</span>
+            </button>
+        </div>
+        <nav>
+            <ul class="flex space-x-6 text-sm font-medium" >
+                <li><a href="#" class="hover:text-gray-300">Shop</a></li>
+                <li><a href="#"  class="hover:text-gray-300">New Arrivals</a></li>
+                <li><a href="#" class="hover:text-gray-300">Brands</a></li>
+                <li><a href="#" class="hover:text-gray-300">About</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="max-w-5xl mx-auto p-8 grid grid-cols-2 gap-12 mt-6">
+    <div class="flex flex-col gap-4">
+        <img src="1.jpg" id="main-image" class="w-full h-auto rounded-xl shadow-sm object-cover">
+    <div class="flex justify-between gap-3 ">
+        <img src="1.jpg" class="tumbnail w-1/4 rounded-lg cursor-pointer border-2 border-transparent hover:border-gary-900 transition">
+        <img src="2.jpg"  class="tumbnail w-1/4 rounded-lg cursor-pointer border-2 border-transparent hover:border-gary-900 transition">
+        <img src="3.jpg"  class="tumbnail w-1/4 rounded-lg cursor-pointer border-2 border-transparent hover:border-gary-900 transition">
+        <img src="4.jpg"  class="tumbnail w-1/4 rounded-lg cursor-pointer border-2 border-transparent hover:border-gary-900 transition">
+     </div>
+    </div>
+    
+    <div class="bg-white p-5 rounded-lg text-centre mt-2 border border-gray-200 flex flex-col justify-center gap-5 shadow-sm ">
+
+        <div>
+        <h1 class="text-4xl font-extrabold text-gray-900">Rolex Submariner</h1>
+        <p class="text-sm text-gray-500 uppercase tracking-widest mt-2">ROLEX</p>
+        </div>
+
+        <div class="flex items-centre gap-4">
+            <span id="current-price" class="text-2xl font-bold text-gray-900">$499.99</span>
+            <span class="text-lg text-gray-400 line-through">$799.99</span>
+            <span class="text-sm font-semibold text-gray-800">38% OFF</span>
+        </div>
+
+
+        <p class="text-gray-600 leading-ralaxed text-sm">
+            this Luxurious timepiece combines elegance with precision craftsmanship. Perfect for formal occasions or everyday wear, it features premium materials and impeccable design .
+        </p>
+
+    <div class="flex items-centre gap-2">
+        <div class="flex text-yellow-400 text-lg">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star text-gray-300">⭐</span>
+        </div>
+                <p class="text-sm text-gray-500 ml-1">Rated 4.8/5 (256 reviews)</p>
+    </div>
+
+    <div class="flex flex-col gap-4 mt-2">
+        <div class="flex items-centre">
+            <div class="flex items-centre border border-gray-300 rounded-md ouverflow-hidden bg-gary-50 ">
+        <button id="btn-minus" class="px-4 py-2 hover:bg-gray-200  text-gray-700 font-bold transition">-</button>
+        <input type="text" id="qty-input" value="1" min="1" class="w-12 text-centre py-2 outline-none bg-transparent font-semibold">
+        <button id="btn-plus" class="px-4 py-2 hover:bg-gray-200  text-gray-700 font-bold transition">+</button>
+        </div>
+    </div>
+
+    <button id="add-to-bag-btn" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-3.5 rounded-md shadow transition cursor-pointer ">Add to Bag</button>
+    </div>
+
+    <div class="bg-gray-100 p-5 rounded-lg text-center mt-2 border border-gray-200">
+        <h3 class="font-bold text-gray-900 mb-1">Limited-Time Offer!</h3>
+        <p class="text-xs text-gray-600 mb-4 px-4">Get an additional 10% off your first purchase when you sign up for our newsletter.</p>
+        <button class="bg-gray-900 hover:bg-gray-800 text-white text-xs font-semibold px-6 py-2.5 rounded transition cursor-pointer">Sign Up Now </button>
+    </div>
+
+
+ </div>
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
